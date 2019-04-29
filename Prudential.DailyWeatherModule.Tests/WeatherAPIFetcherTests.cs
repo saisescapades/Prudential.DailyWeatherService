@@ -18,10 +18,8 @@ namespace Tests
         {
             appSettings = new AppSettings();
             //Although below values have been harcoded, the same may be fetched from a test configuration file
-            //MOQ package may also be used for mocking dependencies.
-            appSettings.OutputFolderPath = "E:\\PRUDASSIGNMENT";
-            appSettings.OutputFolderNameFormat = "yyyy-dd-MM";
-            appSettings.OutputFileNameDateFormat = "yyyy-dd-MM_HH-mm-ss";
+            //MOQ package may also be used for mocking dependencies.            
+            appSettings.WeatherAPIURL = "http://samples.openweathermap.org/data/2.5/weather?appid=aa69195559bd4f88d79f9aadeb77a8f6&id={cityID}";
 
             options = Options.Create(appSettings);
 
